@@ -1,6 +1,7 @@
 extends Node2D 
 
 var item = "" 
+var amount = 1
 
 func set_item(item_name): 
 	$Sprite.texture = load("res://Sprites/Items/%s.png" % item_name) 
@@ -8,3 +9,16 @@ func set_item(item_name):
 
 func _ready(): 
 	pass 
+
+func get_item():
+	return item
+
+func get_amount():
+	return amount 
+
+func _input(event):
+	if event.is_action_pressed("e_click"):
+		var pl = get_parent().get_parent().get_player()
+		if abs(pl.position.x - position.x) < 40 and abs(pl.position.y - position.y) < 40:
+			get_parent().remove_child(self)
+			pl.pick(self)

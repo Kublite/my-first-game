@@ -5,7 +5,7 @@
 [ext_resource path="res://Scenes/Camera.tscn" type="PackedScene" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 13.25, 23 )
+extents = Vector2( 11.5, 22.5 )
 
 [node name="KinematicBody2D" type="KinematicBody2D"]
 script = ExtResource( 2 )
@@ -13,10 +13,9 @@ script = ExtResource( 2 )
 [node name="Sprite" type="Sprite" parent="."]
 scale = Vector2( 0.2, 0.2 )
 texture = ExtResource( 1 )
-centered = false
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 29.75, 27 )
+[node name="Shape" type="CollisionShape2D" parent="."]
+position = Vector2( -2, -5 )
 shape = SubResource( 1 )
 
 [node name="Camera" parent="." instance=ExtResource( 3 )]

@@ -1,0 +1,20 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Sprites/Items/rock.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/InventItem.gd" type="Script" id=2]
+
+[node name="InventItem" type="TextureRect"]
+margin_right = 32.0
+margin_bottom = 32.0
+rect_min_size = Vector2( 32, 32 )
+texture = ExtResource( 1 )
+expand = true
+script = ExtResource( 2 )
+
+[node name="Amount" type="Label" parent="."]
+margin_left = 16.0
+margin_top = 21.0
+margin_right = 24.0
+margin_bottom = 35.0
+rect_min_size = Vector2( 8, 14 )
+text = "1"
