@@ -120,43 +120,45 @@ position = Vector2( 233, 249 )
 [node name="Cobble2" parent="Nature" instance=ExtResource( 5 )]
 position = Vector2( 160, 162 )
 
+[node name="Tree4" parent="Nature" instance=ExtResource( 4 )]
+position = Vector2( 910, 57 )
+
+[node name="Tree9" parent="Nature/Tree4" instance=ExtResource( 4 )]
+position = Vector2( -193, 74 )
+
+[node name="Tree8" parent="Nature/Tree4" instance=ExtResource( 4 )]
+position = Vector2( -106, 141 )
+
+[node name="Tree7" parent="Nature/Tree4" instance=ExtResource( 4 )]
+position = Vector2( 24, 137 )
+
+[node name="Tree6" parent="Nature/Tree4" instance=ExtResource( 4 )]
+position = Vector2( -202, -45 )
+
+[node name="Tree5" parent="Nature/Tree4" instance=ExtResource( 4 )]
+position = Vector2( -3, -92 )
+
+[node name="Tree3" parent="Nature/Tree4" instance=ExtResource( 4 )]
+position = Vector2( -61, -79 )
+
+[node name="Tree2" parent="Nature/Tree4" instance=ExtResource( 4 )]
+position = Vector2( -34, 102 )
+
+[node name="Tree" parent="Nature/Tree4" instance=ExtResource( 4 )]
+position = Vector2( -131, 10 )
+
 [node name="Items" type="Node2D" parent="."]
 
 [node name="Player" parent="." instance=ExtResource( 7 )]
 position = Vector2( 290, 204 )
 
-[node name="Tree4" parent="." instance=ExtResource( 4 )]
-position = Vector2( 826, 87 )
+[node name="Goblins" type="Node2D" parent="."]
 
-[node name="Tree9" parent="Tree4" instance=ExtResource( 4 )]
-position = Vector2( -53, 92 )
+[node name="Goblin" parent="Goblins" instance=ExtResource( 3 )]
+position = Vector2( 900, 160 )
 
-[node name="Tree8" parent="Tree4" instance=ExtResource( 4 )]
-position = Vector2( 46, 123 )
-
-[node name="Tree7" parent="Tree4" instance=ExtResource( 4 )]
-position = Vector2( -159, -120 )
-
-[node name="Tree6" parent="Tree4" instance=ExtResource( 4 )]
-position = Vector2( -108, 7 )
-
-[node name="Tree5" parent="Tree4" instance=ExtResource( 4 )]
-position = Vector2( -1, -138 )
-
-[node name="Tree3" parent="Tree4" instance=ExtResource( 4 )]
-position = Vector2( 73, -90 )
-
-[node name="Tree2" parent="Tree4" instance=ExtResource( 4 )]
-position = Vector2( 114, 33 )
-
-[node name="Tree" parent="Tree4" instance=ExtResource( 4 )]
-position = Vector2( -68, -93 )
-
-[node name="Goblin" parent="." instance=ExtResource( 3 )]
-position = Vector2( 708, 135 )
-
-[node name="Goblin2" parent="." instance=ExtResource( 3 )]
+[node name="Goblin2" parent="Goblins" instance=ExtResource( 3 )]
 position = Vector2( 117, 371 )
 
-[node name="Goblin3" parent="." instance=ExtResource( 3 )]
+[node name="Goblin3" parent="Goblins" instance=ExtResource( 3 )]
 position = Vector2( 87, 81 )
