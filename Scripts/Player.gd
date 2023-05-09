@@ -5,9 +5,9 @@ var inventory={}
 func pick(item):
 	var it = item.get_item()
 	if it in inventory.keys():
-		inventory[it] += item.get_amount()
+		inventory[it][0] += item.get_amount()
 	else:
-		inventory[it] = item.get_amount()
+		inventory[it] = [item.get_amount(),item.get_item_stack()]
 	ui.update_inventory(inventory)
 	# warning-ignore:unused_argument
 	

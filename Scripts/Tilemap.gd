@@ -10,7 +10,7 @@ func update_label(value):
 
 func _ready(): 
 	var items = ["rock", "rope", "Stick"] 
-	for i in range(30): 
+	for i in range(100): 
 		randomize() 
 		var a = int(rand_range(0, 3)) 
 		var new_item = item.instance() 

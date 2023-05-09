@@ -2,6 +2,7 @@ extends Node2D
 
 var item = "" 
 var amount = 1
+var stack_limit = 16
 
 func set_item(item_name): 
 	$Sprite.texture = load("res://Sprites/Items/%s.png" % item_name) 
@@ -15,6 +16,9 @@ func get_item():
 
 func get_amount():
 	return amount 
+	
+func get_item_stack():
+	return stack_limit
 
 func _input(event):
 	if event.is_action_pressed("e_click"):
