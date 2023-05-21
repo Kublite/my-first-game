@@ -4,9 +4,10 @@ var item = ""
 var amount = 1
 var stack_limit = 16
 
-func set_item(item_name): 
-	$Sprite.texture = load("res://Sprites/Items/%s.png" % item_name) 
-	item = item_name 
+func set_item(properties): 
+	$Sprite.texture = load("res://Sprites/Items/%s.png" % properties[0]) 
+	item = properties[0]
+	stack_limit = properties[1]
 
 func _ready(): 
 	pass 

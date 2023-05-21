@@ -9,7 +9,7 @@ func update_label(value):
 	get_parent().update_label(value)
 
 func _ready(): 
-	var items = ["rock", "rope", "Stick"] 
+	var items = [["rock", 5], ["rope", 16], ["Stick", 10]] 
 	for i in range(100): 
 		randomize() 
 		var a = int(rand_range(0, 3)) 
