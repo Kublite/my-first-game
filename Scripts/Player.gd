@@ -1,5 +1,4 @@
 extends "res://Scripts/Skeletman.gd"
-
 var inventory={}
 
 func pick(item):
