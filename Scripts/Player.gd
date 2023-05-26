@@ -1,6 +1,11 @@
 extends "res://Scripts/Skeletman.gd"
 var inventory={}
 
+func _ready():
+	self.hp = 100
+	set_start_hp(self.hp, self.max_hp)
+	add_to_group(GlobalVars.entity_group)
+	
 func pick(item):
 	var it = item.get_item()
 	if it in inventory.keys():
@@ -30,3 +35,4 @@ func _process(delta):
 func _unhandled_input(event):
 	if event.is_action_pressed("inventory"):
 		ui.toggle_inventory(inventory)
+

@@ -14,6 +14,10 @@ config/name="Игра"
 run/main_scene="res://Scenes/Root.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+GlobalVars="*res://Scenes/Singletones/GlobalVars.tscn"
+
 [gui]
 
 common/drop_mouse_on_gui_input_disabled=true

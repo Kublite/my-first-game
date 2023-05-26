@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Scenes/Skeletman.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Scenes/Camera.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Sprites/Skelet2 (2).png" type="Texture" id=4]
+[ext_resource path="res://Sprites/UI/Hearts/PNG/health_bar/health_bar_decoration.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/UI/Hearts/PNG/health_bar/health_bar.png" type="Texture" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 11, 22 )
@@ -21,3 +23,17 @@ centered = false
 shape = SubResource( 1 )
 
 [node name="Camera" parent="." index="2" instance=ExtResource( 3 )]
+
+[node name="Shape2" type="CollisionShape2D" parent="HitBox" index="0"]
+position = Vector2( -2, -5 )
+shape = SubResource( 1 )
+
+[node name="HP_bar" parent="." index="4"]
+margin_left = -494.0
+margin_top = 271.0
+margin_right = -350.0
+margin_bottom = 312.0
+value = 50.0
+texture_under = ExtResource( 5 )
+texture_progress = ExtResource( 6 )
+texture_progress_offset = Vector2( 14, 0 )

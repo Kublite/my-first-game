@@ -6,10 +6,17 @@ var target = null
 var default_speed = 50
 onready var animGoblin = $AnimationPlayer
 onready var sprite =$Sprite
-
+var target_intercepted = false
+var can_bite = true
+var bite_strenght = 25
 
 func _ready():
 	speed = default_speed
+	self.hp = 60
+	self.max_hp = 60
+	set_start_hp(self.hp, self.max_hp)
+	add_to_group(GlobalVars.entity_group)
+	add_to_group(GlobalVars.mob_group)
 
 func _process(delta):
 	if velocity:
@@ -22,6 +29,9 @@ func _process(delta):
 	wander()
 	search_for_target()
 	
+	if target_intercepted and can_bite:
+		bite(target)
+	
 func search_for_target():
 	var pl = get_parent().get_parent().get_player()
 	if target:
@@ -32,7 +42,7 @@ func search_for_target():
 		
 	elif position.distance_to(pl.position)<200:
 		cancel_movement() 
-		speed = default_speed *2 if speed == default_speed else speed
+		speed = default_speed *3 if speed == default_speed else speed
 		target = pl
 
 func set_destination(dest):
@@ -67,3 +77,25 @@ func wander():
 
 func _on_StandingTimer_timeout():
 	stands = true
+
+
+func bite(targ):
+	targ.reduce_hp(bite_strenght)
+	can_bite = false
+	$BiteCooldown.start(1)
+
+func _on_BiteCooldown_timeout():
+	can_bite = true
+	pass # Replace with function body.
+
+
+func _on_BiteArea_area_entered(area):
+	if area.get_parent() == target:
+		target_intercepted = true
+	pass # Replace with function body.
+
+
+func _on_BiteArea_area_exited(area):
+	if area.get_parent() == target:
+		target_intercepted = false
+	pass # Replace with function body.
