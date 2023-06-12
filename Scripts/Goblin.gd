@@ -3,12 +3,12 @@ var stands = true
 var destination = Vector2()
 var velocity = Vector2()
 var target = null
-var default_speed = 50
-onready var animGoblin = $AnimationPlayer
+var default_speed = 20
+onready var animGoblin = $AnimationGoblin
 onready var sprite =$Sprite
 var target_intercepted = false
 var can_bite = true
-var bite_strenght = 25
+var bite_strenght = 5
 
 func _ready():
 	speed = default_speed
@@ -35,23 +35,22 @@ func _process(delta):
 func search_for_target():
 	var pl = get_parent().get_parent().get_player()
 	if target:
-		if position.distance_to(target.position) >200:
+		if position.distance_to(target.position) >100:
 			cancel_movement()
 		else:
 			set_destination(target.position)
 		
-	elif position.distance_to(pl.position)<200:
+	elif position.distance_to(pl.position)<100:
 		cancel_movement() 
 		speed = default_speed *3 if speed == default_speed else speed
 		target = pl
 
-func set_destination(dest):
+func set_destination(dest): 
 	destination = dest
 	velocity = (destination - position).normalized() * speed
-	
-	animGoblin.play("run")
 	if sign(sprite.scale.x) != sign(velocity.x):
 		sprite.scale.x *= -1
+	animGoblin.play("run")
 	stands = false
 
 func cancel_movement():
@@ -66,8 +65,8 @@ func wander():
 	var pos = position
 	if stands:
 		randomize()
-		var x = int(rand_range(pos.x - 150, pos.x + 150))
-		var y = int(rand_range(pos.y - 150, pos.y + 150))
+		var x = int(rand_range(pos.x - 50, pos.x + 50))
+		var y = int(rand_range(pos.y - 50, pos.y + 50))
 		x = clamp(x, 0, 10000)
 		y = clamp(y, 0, 10000)
 		set_destination(Vector2(x,y))
@@ -80,12 +79,15 @@ func _on_StandingTimer_timeout():
 
 
 func bite(targ):
-	targ.reduce_hp(bite_strenght)
+	animGoblin.play("Attack")
+	targ.reduce_hp(bite_strenght) 
 	can_bite = false
-	$BiteCooldown.start(1)
+	$BiteCooldown.start(0.8)
+
 
 func _on_BiteCooldown_timeout():
 	can_bite = true
+	animGoblin.play("idle")
 	pass # Replace with function body.
 
 

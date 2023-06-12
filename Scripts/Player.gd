@@ -1,5 +1,11 @@
 extends "res://Scripts/Skeletman.gd"
 var inventory={}
+onready var animationPlayer = $AnimationPlayer 
+const acc = 500
+const max_speed = 80
+const friction = 500
+var velocity= Vector2.ZERO 
+onready var sprite = $Sprite 
 
 func _ready():
 	self.hp = 100
@@ -15,24 +21,23 @@ func pick(item):
 	ui.update_inventory(inventory)
 	# warning-ignore:unused_argument
 	
-func _process(delta): 
+func _physics_process(delta): 
+	var input_vector = Vector2.ZERO 
+	input_vector.x = Input.get_action_strength("right")-Input.get_action_strength("left") 
+	input_vector.y = Input.get_action_strength("down")-Input.get_action_strength("up") 
+	input_vector = input_vector.normalized() 
 
-	var velocity = Vector2() 
-	if Input.is_action_pressed("up"): 
-		velocity.y-=speed 
-	if Input.is_action_pressed("down"): 
-		velocity.y+=speed 
-	if Input.is_action_pressed("left"): 
-		velocity.x-=speed 
-	if Input.is_action_pressed("right"): 
-		velocity.x+=speed 
-# warning-ignore:return_value_discarded
-	move_and_slide(velocity) 
+	if input_vector != Vector2.ZERO: 
+		animationPlayer.play("Run") 
+		if input_vector.x != 0 and sign(sprite.scale.x)!=sign(input_vector.x): 
+			sprite.scale.x *= -1 
+		velocity = velocity.move_toward(input_vector * max_speed, acc * delta) 
+	else: 
+		animationPlayer.play("Idle") 
+		velocity = velocity.move_toward(Vector2.ZERO, friction * delta)  
+	velocity = move_and_slide(velocity) 
 
-	position.x = clamp(position.x, 0,10000) 
-	position.y = clamp(position.y, 0,10000) 
 
 func _unhandled_input(event):
 	if event.is_action_pressed("inventory"):
 		ui.toggle_inventory(inventory)
-

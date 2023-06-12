@@ -13,3 +13,7 @@ func toggle_inventory(inventory):
 func update_inventory(inventory):
 	if pack.visible:
 		pack.show_inventory(inventory)
+ 
+func _unhandled_input(event):
+	if event.is_action_pressed("esc"):
+		$Menu.open()
