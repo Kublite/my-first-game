@@ -4,17 +4,17 @@
 [ext_resource path="res://Scripts/InventItem.gd" type="Script" id=2]
 
 [node name="InventItem" type="TextureRect"]
-margin_right = 32.0
-margin_bottom = 32.0
-rect_min_size = Vector2( 32, 32 )
+margin_right = 16.0
+margin_bottom = 16.0
+rect_min_size = Vector2( 16, 16 )
 texture = ExtResource( 1 )
 expand = true
 script = ExtResource( 2 )
 
 [node name="Amount" type="Label" parent="."]
-margin_left = 16.0
-margin_top = 21.0
-margin_right = 24.0
-margin_bottom = 35.0
-rect_min_size = Vector2( 8, 14 )
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 20.0
+margin_bottom = 26.0
+rect_min_size = Vector2( 8, 8 )
 text = "1"

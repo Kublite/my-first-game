@@ -5,8 +5,8 @@
 [ext_resource path="res://Scripts/Panel.gd" type="Script" id=3]
 
 [node name="Panel" type="NinePatchRect"]
-margin_right = 324.0
-margin_bottom = 111.0
+margin_right = 151.0
+margin_bottom = 84.0
 texture = ExtResource( 2 )
 patch_margin_left = 3
 patch_margin_top = 3
@@ -17,54 +17,54 @@ script = ExtResource( 3 )
 [node name="Scroll" type="ScrollContainer" parent="."]
 margin_left = 2.0
 margin_top = 2.0
-margin_right = 322.0
-margin_bottom = 108.0
+margin_right = 151.0
+margin_bottom = 87.0
 
 [node name="Grid" type="GridContainer" parent="Scroll"]
-margin_right = 320.0
-margin_bottom = 68.0
+margin_right = 176.0
+margin_bottom = 36.0
 columns = 9
 
 [node name="InventItem" parent="Scroll/Grid" instance=ExtResource( 1 )]
 
 [node name="InventItem2" parent="Scroll/Grid" instance=ExtResource( 1 )]
-margin_left = 36.0
-margin_right = 68.0
+margin_left = 20.0
+margin_right = 36.0
 
 [node name="InventItem3" parent="Scroll/Grid" instance=ExtResource( 1 )]
-margin_left = 72.0
-margin_right = 104.0
+margin_left = 40.0
+margin_right = 56.0
 
 [node name="InventItem4" parent="Scroll/Grid" instance=ExtResource( 1 )]
-margin_left = 108.0
-margin_right = 140.0
+margin_left = 60.0
+margin_right = 76.0
 
 [node name="InventItem5" parent="Scroll/Grid" instance=ExtResource( 1 )]
-margin_left = 144.0
-margin_right = 176.0
+margin_left = 80.0
+margin_right = 96.0
 
 [node name="InventItem6" parent="Scroll/Grid" instance=ExtResource( 1 )]
-margin_left = 180.0
-margin_right = 212.0
+margin_left = 100.0
+margin_right = 116.0
 
 [node name="InventItem7" parent="Scroll/Grid" instance=ExtResource( 1 )]
-margin_left = 216.0
-margin_right = 248.0
+margin_left = 120.0
+margin_right = 136.0
 
 [node name="InventItem8" parent="Scroll/Grid" instance=ExtResource( 1 )]
-margin_left = 252.0
-margin_right = 284.0
+margin_left = 140.0
+margin_right = 156.0
 
 [node name="InventItem9" parent="Scroll/Grid" instance=ExtResource( 1 )]
-margin_left = 288.0
-margin_right = 320.0
+margin_left = 160.0
+margin_right = 176.0
 
 [node name="InventItem10" parent="Scroll/Grid" instance=ExtResource( 1 )]
-margin_top = 36.0
-margin_bottom = 68.0
+margin_top = 20.0
+margin_bottom = 36.0
 
 [node name="InventItem11" parent="Scroll/Grid" instance=ExtResource( 1 )]
-margin_left = 36.0
-margin_top = 36.0
-margin_right = 68.0
-margin_bottom = 68.0
+margin_left = 20.0
+margin_top = 20.0
+margin_right = 36.0
+margin_bottom = 36.0
