@@ -20,3 +20,13 @@ func update_hp():
 func reduce_hp(val):
 	self.hp -= val
 	update_hp()
+	
+func save():
+	var data = {
+		"filename": get_filename(),
+		"position": position,
+		"speed":speed,
+		"hp":hp,
+		"max_hp":max_hp
+	}
+	return data

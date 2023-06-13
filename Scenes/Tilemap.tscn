@@ -790,7 +790,19 @@ position = Vector2( 160, 91 )
 [node name="Goblins" type="Node2D" parent="."]
 
 [node name="Goblin" parent="Goblins" instance=ExtResource( 3 )]
-position = Vector2( 475, 513 )
+position = Vector2( 509, 546 )
+
+[node name="Goblin4" parent="Goblins" instance=ExtResource( 3 )]
+position = Vector2( 914, 1041 )
+
+[node name="Goblin5" parent="Goblins" instance=ExtResource( 3 )]
+position = Vector2( 1140, 810 )
+
+[node name="Goblin6" parent="Goblins" instance=ExtResource( 3 )]
+position = Vector2( 694, 714 )
+
+[node name="Goblin7" parent="Goblins" instance=ExtResource( 3 )]
+position = Vector2( 809, 508 )
 
 [node name="Goblin2" parent="Goblins" instance=ExtResource( 3 )]
 position = Vector2( 81, 507 )

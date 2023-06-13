@@ -27,3 +27,13 @@ func _input(event):
 		if abs(pl.position.x - position.x) < 40 and abs(pl.position.y - position.y) < 40:
 			get_parent().remove_child(self)
 			pl.pick(self)
+
+func save():
+	var data = {
+		"filename":get_filename(),
+		"position":position, 
+		"item":item,
+		"amount": amount,
+		"stack_limit": stack_limit
+	}
+	return data

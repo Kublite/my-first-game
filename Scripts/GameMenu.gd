@@ -5,6 +5,8 @@ func _ready():
 	hide()
 	$Panel/Main/Buttons/Resume.connect("pressed", self, "open")
 	
+	$Panel/Main/Buttons/Quit.connect("pressed", SceneChanger, "change_scene", ["res://Scenes/Menu.tscn"])
+	
 	$Panel/Main/Buttons/Save.connect("pressed", $Panel/Main, "hide")
 	$Panel/Main/Buttons/Save.connect("pressed", $Panel/Save, "open")
 	
@@ -19,7 +21,7 @@ func _ready():
 	
 	$Panel/Save.connect("on_saved", $Panel/Main, "show")
 	$Panel/Save.connect("on_saved", $Panel/Save, "hide")
-	
+	$Panel/Load.connect("on_close_menu", self, "open")
 func open():
 	if visible:
 		hide()

@@ -49,6 +49,8 @@ func save():
 	if save_name !="":
 		var file = save_file.new()
 		file.set_name(save_name)
+		var able_to_save = get_tree().get_nodes_in_group(GlobalVars.saving_group)
+		file.set_data(able_to_save[0].save())
 		var save_path = GlobalVars.save_dir.plus_file(GlobalVars.save_temp % save_name)
 		
 		ResourceSaver.save(save_path, file)

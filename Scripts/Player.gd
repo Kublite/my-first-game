@@ -41,3 +41,9 @@ func _physics_process(delta):
 func _unhandled_input(event):
 	if event.is_action_pressed("inventory"):
 		ui.toggle_inventory(inventory)
+
+
+func save():
+	var data = .save()
+	data["inventory"]= inventory
+	return data

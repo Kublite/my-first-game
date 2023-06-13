@@ -1,0 +1,594 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://Scripts/Resources/SaveData.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+save_name = "1"
+data = {
+"filename": "res://Scenes/Tilemap.tscn",
+"items": [ {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 894, 399 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 447, 246 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 373, 332 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 755, 410 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 327, 330 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 629, 80 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 506, 415 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 525, 225 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 249, 475 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 654, 465 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 151, 230 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 526, 86 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 753, 295 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 598, 226 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 51, 471 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 744, 198 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 642, 352 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 644, 306 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 919, 22 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 635, 184 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 906, 255 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 514, 365 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 827, 235 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 857, 263 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 546, 92 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 188, 458 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 853, 451 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 811, 79 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 549, 247 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 660, 209 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 322, 430 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 797, 105 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 121, 430 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 907, 468 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 647, 353 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 729, 124 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 139, 419 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 524, 242 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 85, 491 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 926, 365 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 605, 407 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 862, 312 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 505, 322 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 199, 495 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 604, 99 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 563, 15 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 150, 276 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 467, 434 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 276, 102 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 777, 375 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 975, 480 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 618, 128 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 186, 216 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 933, 409 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 346, 395 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 598, 457 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 154, 10 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 714, 195 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 143, 301 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 808, 422 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 230, 115 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 863, 158 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 228, 96 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 209, 17 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 909, 480 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 306, 386 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 655, 41 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 927, 292 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 640, 189 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 139, 295 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 767, 415 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 272, 491 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 761, 444 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 897, 282 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 496, 367 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 981, 209 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 806, 476 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 794, 90 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 641, 341 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 282, 295 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 432, 306 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 311, 185 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 565, 141 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 745, 123 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 140, 279 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 224, 285 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 109, 441 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 127, 277 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 623, 467 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 793, 156 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rope",
+"position": Vector2( 787, 3 ),
+"stack_limit": 16
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 926, 288 ),
+"stack_limit": 10
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 354, 303 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "rock",
+"position": Vector2( 935, 71 ),
+"stack_limit": 5
+}, {
+"amount": 1,
+"filename": "res://Scenes/Item.tscn",
+"item": "Stick",
+"position": Vector2( 7, 232 ),
+"stack_limit": 10
+} ],
+"mob": [  ],
+"player": {
+"filename": "res://Scenes/Player.tscn",
+"hp": 100,
+"inventory": {
+"Stick": [ 1, 10 ],
+"rock": [ 2, 5 ],
+"rope": [ 2, 16 ]
+},
+"max_hp": 100,
+"position": Vector2( 39.6619, 136.827 ),
+"speed": 200
+}
+}

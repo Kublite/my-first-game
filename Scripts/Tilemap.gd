@@ -17,4 +17,19 @@ func _ready():
 		$Items.add_child(new_item) 
 		new_item.set_item(items[a]) 
 		new_item.position = Vector2(int(rand_range(0, 1000)), int(rand_range(0, 500))) 
-	pass 
+	add_to_group(GlobalVars.saving_group)
+ 
+func save():
+	var data = {
+		"filename": get_filename(),
+		"player": $Player.save(), 
+		"items":[],
+		"mob":[],
+	}
+	
+	for item in $Items.get_children():
+		data["items"].append(item.save())
+		
+	#for mob in $Goblins.get_children():
+		#data["goblins"].append(item.save())
+	return data

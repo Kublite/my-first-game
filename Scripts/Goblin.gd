@@ -101,3 +101,9 @@ func _on_BiteArea_area_exited(area):
 	if area.get_parent() == target:
 		target_intercepted = false
 	pass # Replace with function body.
+
+func save():
+	var data = .save()
+	data["bite_strenght"]=bite_strenght
+	data["default_speed"]=default_speed
+	return data
